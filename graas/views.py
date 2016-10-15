@@ -16,6 +16,7 @@ class DefaultViewSet(CacheResponseAndETAGMixin, viewsets.ModelViewSet):
     def get_queryset(self):
         assert self.model_class is not None, "You need to override model_class"
         queryset = self.model_class.objects.all()
+        print(queryset)
         return queryset
 
     def get_serializer_class(self):
