@@ -1,0 +1,7 @@
+django-cors-headers
+djangorestframework
+djangorestframework-gis
+drf-extensions
+django-filter
+pytz
+mysqlclient
