@@ -9,7 +9,7 @@ from rest_framework_extensions.mixins import CacheResponseAndETAGMixin
 import datetime
 import pytz
 
-class DefaultViewSet(CacheResponseAndETAGMixin, viewsets.ModelViewSet):
+class DefaultViewSet(viewsets.ModelViewSet):
     model_class = None
     permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
 
